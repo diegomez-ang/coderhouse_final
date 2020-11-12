@@ -1,0 +1,176 @@
+@import "menu";
+@import "blog";
+
+$fuente-secundaria: 'Audiowide', cursive;
+$color-azul: #091C32;
+$color-rojo: #B3365B;
+$color-amarillo:#FFD113;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif, Arial;
+}
+
+
+.fa-wrench{
+    font-size: 40px;
+    padding: 5px;
+    color: $color-amarillo;
+}
+
+/* ---------------- main ------------------ */
+
+.main{    
+    display: flex;
+    width:100%;
+    align-items: center;        
+}
+
+.main__logo{
+    background-color: $color-azul;
+    width: 50%;
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;  
+}
+
+.main__logo--titulo{
+    font-family: $fuente-secundaria;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: $color-rojo;
+}
+.main__logo--centro{
+    width: 40%;
+    padding: 10px;
+}
+.main__logo--eslogan{
+   /*  word-spacing: 25px; */
+    font-size: 25px;
+    color: $color-amarillo;
+}
+
+.derecha{
+    width: 50%;
+    background-color: $color-rojo; 
+    height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;  
+    justify-content: center; 
+}
+.derecha__title{
+    padding: 20px;
+    font-size: 50px;
+}
+
+.derecha__redes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+            li{
+                list-style: none;
+                padding: 20px;
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $color-azul;
+                    font-size: 30px;                    
+                }
+            }
+        }
+
+
+
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes{
+    .tamaño-#{$size}{
+        font-size:$size;
+        height: $size;
+        width: $size;
+    }
+}
+
+@mixin tamaño($width, $height){
+    height: $height;
+    width: $width;
+}
+.box{
+    @include tamaño(500px, 50px)
+}
+
+%botones{
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.boton-enviar{
+    @extend %botones;
+    background-color: $color-rojo;
+    margin: 10px;
+}
+
+.boton-eliminar{
+    background-color:$color-azul;
+    @extend %botones;
+}
+/* ------- Responsive ------- */
+@media(max-width:870px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: 100vh;
+    }
+    .derecha{
+        display: flex;
+        background-color: $color-azul;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    .derecha__title, .derecha__intro{
+        display: none;
+    }    
+    /* .derecha__redes{
+        text-align: center;
+        background-color: red;
+    } */
+    .fa-wrench{
+        display: none;
+    }
+    .main__logo--eslogan{
+        width: 100vh;
+        text-align: center;
+    }
+    .main__logo--centro{
+        width: 70%;
+    }
+    .fab{
+        color: white;
+    }
+}
+    
+/* .main{
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+    }
+    .main__logo{
+        width:100%;
+    }
+    .fa-wrench{
+        display:none;
+    }
+     */
+

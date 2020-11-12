@@ -1,0 +1,95 @@
+$color-azul: #091C32;
+$color-rojo: #B3365B;
+$color-amarillo:#FFD113;
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: $color-rojo;
+}
+
+@mixin texto-titulo($font-size, $font-weight,$color){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+.title{
+    @include texto-titulo(20px, 30px,$color-amarillo);
+}
+
+%lista{
+    list-style: none;
+    justify-content: center;
+    padding: 10px;    
+}
+
+%vinculo{
+    text-decoration: none;
+    color: $color-azul;
+    padding: 5px;
+}
+%texto{
+    color:white;
+    padding: 20px;
+}
+.contacto--list li{
+    @extend %lista;
+    text-decoration: none;
+}
+
+.mapaSitio--list li {
+    @extend %lista;
+}
+.mapaSitio--list li a{
+    @extend %vinculo;
+    color:$color-azul;
+}
+
+main{
+    background-color: $color-azul;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.main__container{
+    width: 80%;
+}
+
+main .main__container a{
+    @extend %vinculo;
+    color: $color-amarillo;
+}
+p{
+    @extend %texto;
+    width: 70%;
+}
+
+h2{
+    font-size: 50px;
+    @extend %texto;
+}
+h3{
+    color:$color-rojo;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* -----   Responsive   ----- */
+
+@media(max-width:870px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapagoogle{
+        display: none;
+    }
+    .mapaSitio{
+        display: none;
+    }
+
+}
+
