@@ -1,5 +1,7 @@
 @import "menu";
 @import "blog";
+@import "nosotros";
+@import "contacto";
 
 $fuente-secundaria: 'Audiowide', cursive;
 $color-azul: #091C32;
@@ -52,8 +54,9 @@ body{
     padding: 10px;
 }
 .main__logo--eslogan{
-   /*  word-spacing: 25px; */
+    word-spacing: 25px;
     font-size: 25px;
+    text-align: center;
     color: $color-amarillo;
 }
 
