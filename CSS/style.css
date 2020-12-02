@@ -132,6 +132,9 @@ main {
 main .main__container a {
   color: #FFD113; }
 
+p {
+  width: 70%; }
+
 h2 {
   font-size: 50px; }
 
@@ -150,6 +153,79 @@ h3 {
     display: none; }
   .mapaSitio {
     display: none; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.nosotros--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nosotros--form--datos {
+  color: white; }
+
+.main--nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nosostros--form {
+  display: flex;
+  flex-direction: column;
+  width: 35%; }
+
+.form-flex {
+  display: flex;
+  flex-direction: column; }
+
+.form--input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #FFD113;
+  background-color: #091C32;
+  color: white; }
+
+.guardar {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFD113;
+  color: #B3365B;
+  font-size: 20px; }
+
+.btn-guardar {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 870px) {
+  .nosostros--form {
+    width: 90%; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.main--contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form--name {
+  display: flex;
+  flex-direction: column;
+  color: white; }
+
+.form--inputc {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #FFD113;
+  background-color: #091C32;
+  color: white; }
+
+.texto--contacto {
+  text-align: center; }
 
 * {
   box-sizing: border-box;
@@ -191,8 +267,9 @@ body {
   padding: 10px; }
 
 .main__logo--eslogan {
-  /*  word-spacing: 25px; */
+  word-spacing: 25px;
   font-size: 25px;
+  text-align: center;
   color: #FFD113; }
 
 .derecha {

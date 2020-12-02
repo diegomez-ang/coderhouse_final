@@ -1,0 +1,29 @@
+$color-azul: #091C32;
+$color-rojo: #B3365B;
+$color-amarillo:#FFD113;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main--contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form--name{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.form--inputc{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid $color-amarillo;
+    background-color: $color-azul;
+    color: white;
+}
+
+.texto--contacto{
+    text-align: center;
+}

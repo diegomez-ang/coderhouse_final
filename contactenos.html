@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/875b875fe8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>responsive</title>
+    <title>Contactenos</title>
 </head>
 
 <body>
@@ -28,28 +28,55 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main--contacto">
+        <h2 >Contactanos</h2>
+        <p class="texto--contacto">¿No encontraste lo que buscabas?, no te preocupes dejanos tus datos y un asesor se comunicara contigo.</p>
+        <br>
+        <form>
 
-        <div class="main__container">
-            <h2>Blog</h2>
+            <div class="form--name">
+                <label for="nombre">Nombre</label>
+                <input class="form--inputc" type="text" name="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <br>
+            <div class="form--name">
+                <label for="tipo">Tipo de bicicleta</label>
+                <select class="form--inputc" name="tipo" id="">
+                    <option value="none">Elije</option>
+                    <option value="ruta">Bicicleta ruta</option>
+                    <option value="Mtb">Bicicleta MTB</option>
+                    <option value="cross">Bicicleta Cross</option>
+                </select>
+            </div>
+            <br>
+            <div class="form--name">
+                <div>Niño/a
+                    <input  type="radio" name="usuario" value="niño">
+                </div>
+                <div>Mujer
+                    <input type="radio" name="usuario" value="mujer">
+                </div>
+                <div>Hombre
+                    <input type="radio" name="usuario" value="hombre">
+                </div>
+            </div>
+            <br>
+            <div class="form--name">
+                <label for="correo">Email</label>
+                <input class="form--inputc" type="email" name="correo" placeholder="tu-correo@beetlebikes.com">
+            </div>
+            <br>
+            <div class="form--name">
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form--inputc" name="comentarios" id="" cols="30" rows="5" placeholder="Comentarios"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Limpiar formulario">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
         <br>
-        <h3>¡Bienvenidos! Este es un espacio de todos aqui podras conocer todas nuestras historias sobre una bicicleta</h3>
-        <br>
-        <a href="#">Viaje al Cocuy (Boyacá, Colombia)</a>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi alias consectetur eligendi facere quis beatae rerum perferendis mollitia, ex eaque delectus, totam est ratione vero ullam minima. Maiores, veniam fugiat!</p>
-        <br>
-        <a href="#">Viaje por el oriente Colombiano</a>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi alias consectetur eligendi facere quis beatae rerum perferendis mollitia, ex eaque delectus, totam est ratione vero ullam minima. Maiores, veniam fugiat!</p>
-        <br>
-        <a href="#">Subimos al alto de la linea! </a>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi alias consectetur eligendi facere quis beatae rerum perferendis mollitia, ex eaque delectus, totam est ratione vero ullam minima. Maiores, veniam fugiat!</p>
-        <br>
-        <a href="#">Alto de patios</a>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi alias consectetur eligendi facere quis beatae rerum perferendis mollitia, ex eaque delectus, totam est ratione vero ullam minima. Maiores, veniam fugiat!</p>
-        <br>
-
-        </div>
-
 
     </main>
     <footer>

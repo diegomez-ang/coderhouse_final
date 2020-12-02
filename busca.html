@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/875b875fe8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Busca un mecánico</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="res-menu">
+            <label for="res-menu">
+                <i class="fas fa-bars" id="sign-one"></i>
+                <i class="fas fa-times-circle" id="sign-two"></i>
+            </label>
+            <a href="../index.html"><i class="fas fa-wrench"></i></a></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="#">Busca un mecanico</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main--nosotros">
+        <div class="nosotros--main">
+            <h2>Busca un mecánico</h2>
+            <br>
+            <p>Contamos con el mejor personal de la ciudad (y próximamente del país) para consentir de la mejor manera
+                tu caballito de acero, cuéntanos que necesitas y con gusto te ubicaremos al mejor mecánico cerca a tu
+                ubicación.</p>
+        </div>
+        <div class="nosostros--form">
+            <div class="form-flex">
+                <label for="nombres" class="nosotros--form--datos">Nombres y apellidos</label>
+                <input class="form--input" type="text" name="nombres" placeholder="Introduce tu nombre">
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="telefono" class="nosotros--form--datos">Telefono</label>
+                <input class="form--input" type="text" name="telefono" placeholder="Introduce tú número de Telefono">
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="correo"  class="nosotros--form--datos">Email</label>
+                <input class="form--input" type="email" name="correo" placeholder="tu-correo@beetlebikes.com">
+            </div>
+            <br>
+            <div class="form-flex">
+                <label  for="tipo" class="nosotros--form--datos">Tipo de servicio requerido</label>
+                <select class="form--input" name="tipo" id="">
+                    <option value="none">Elije</option>
+                    <option value="m-prev">Mantenimiento preventivo</option>
+                    <option value="m-cor">Mantenimiento correctivo</option>
+                    <option value="Alistamiento">Alistamiento</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="tipo" class="nosotros--form--datos">Tipo de bicicleta</label>
+                <select class="form--input" name="tipo" id="">
+                    <option value="none">Elije</option>
+                    <option value="ruta">Bicicleta ruta</option>
+                    <option value="Mtb">Bicicleta MTB</option>
+                    <option value="cross">Bicicleta Cross</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="tipo" class="nosotros--form--datos">Zona de residencia</label>
+                <select class="form--input" name="tipo" id="">
+                    <option value="none">Elije</option>
+                    <option value="norte">NORTE</option>
+                    <option value="centro">CENTRO</option>
+                    <option value="sur">SUR</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="tipo" class="nosotros--form--datos">En que horario deseas tu servicio</label>
+                <select class="form--input" name="tipo" id="">
+                    <option value="none">Elije</option>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-flex">
+                <label for="time" class="nosotros--form--datos">Fecha de servicio</label>
+                <input class="form--input" type="date" value="2020-01-01" >
+            </div>
+            <br>
+                <div class="btn-guardar">
+                    <button class="guardar"><strong>Enviar</strong> </button>
+                </div>
+            <br>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="contacto">
+                <h3 class="title">Escribenos</h3>
+                <ul class="contacto--list">
+                    <li><i class="fas fa-envelope"></i> Contacto@beetlebikes.com</li>
+                    <li><i class="fas fa-phone-square-alt"></i> + 57 3144269127</li>
+                    <li><i class="fas fa-map"></i> Cra 145A # 12 - 53 Bogotá Colombia</li>
+                </ul>
+            </div>
+            <div class="mapaSitio">
+                <h3 class="title">Mapa del sitio</h3>
+                <ul class="mapaSitio--list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./busca.html">Busca un mecanico</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="mapagoogle">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.446925416714!2d-74.1592274!3d4.61874525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1600632341918!5m2!1ses!2sco"
+                    width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
