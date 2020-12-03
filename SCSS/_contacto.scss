@@ -27,3 +27,16 @@ $color-amarillo:#FFD113;
 .texto--contacto{
     text-align: center;
 }
+.send{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: $color-amarillo;
+    color: $color-rojo;
+    font-size: 20px;
+}
+.sendd{
+    display: flex;
+    justify-content: center;  
+}
+
